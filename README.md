@@ -6,13 +6,13 @@
 
 This repository contains the code used in the paper titled "Visibility graph-based covariance functions for scalable spatial analysis in non-convex partially Euclidean domains" by Brian Gilbert and Abhirup Datta.
 
-Data for the Chesapeake Bay data analysis is availabe online courtesy of the Chesapeake Bay Project (see main text for citation) and can be obtained by contacting the first author.
+Data for the Chesapeake Bay data analysis is available online courtesy of the Chesapeake Bay Project (see main text for citation) and can be obtained by contacting the first author.
 
 ### Notes
 
 - `functions.R` in the main directory implements the visGP method.
 - Many '.R' files are designed to be run in a batch scripting environment. For the simulation studies, this is often to pass in a random seed. To reproduce the entire study, the scripts would be run for the seeds 1 through 4500.
-- As of the time of writing, the boraGP package is available at https://github.com/jinbora0720/boraGP. We use a minor adjustment to avoid problems when barriers have zero-width, which occurs in the U-shaped domain. This minor adjustment is implented at https://github.com/bjg345/boraGP.
+- As of the time of writing, the boraGP package is available at https://github.com/jinbora0720/boraGP. We use a minor adjustment to avoid problems when barriers have zero width, which occurs in the U-shaped domain. This minor adjustment is implemented at https://github.com/bjg345/boraGP.
 
 ### Directories
 
@@ -25,7 +25,7 @@ Reproduces the data analysis from Section 5.
 - **summarize.R**: Generates figures and tables from the analysis outputs.
 #### sim_data_gen
 
-This directory contains scripts for generating simulation data used in Section 4 of the study, for the fork-shaped and U-shaped domains.
+This directory contains scripts for generating simulation data for the fork-shaped and U-shaped domains, which were used in Section 4 of the study.
 
 The files are organized by domain shape (`fork` or `U`) and should be run in the following sequence:
 
